@@ -1,0 +1,92 @@
+/**
+ * Page components
+ *
+ * Description: This is the most accessible LESS file. For creating stucture of a LESS project
+ * There're some simple rules: 
+ *  - use base rule on this file. E.g. every single rule/indent or each component. To generate the fast view for the parent components
+ *  - for children rules put it in matched folders and import it in parent's section
+ *  
+ */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #666;
+    .fontNunito(300);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+a {
+    color: @gold;
+    text-decoration: none;
+    outline: none;
+    .transition(all .3s ease);
+    &:hover {
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+
+.row {
+    .col-centered { 
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.pad40 {
+    padding: 40px 0;
+}
+.pad60 {
+    padding: 60px 0;
+}
+.marg-bot-60 {
+    margin-bottom: 60px;
+}
+//** ------ {{ plugins }} ------------------------------------ 
+@import 'blocks/plugins.less';
+
+//** ------ {{ header }} ------------------------------------ 
+@import 'blocks/header.less';
+
+//** ------ {{ PAGES }} ------------------------------------ 
+@import 'blocks/content_page.less';
+@import 'blocks/product_detail.less';
+
+//** ------ {{ sidebar }} ------------------------------------ 
+
+
+
+
+
+//** ------ {{ footer }} ------------------------------------ 
+
+
+
+//** ------ {{ forms }} ------------------------------------ 
+// @import "form/...";
